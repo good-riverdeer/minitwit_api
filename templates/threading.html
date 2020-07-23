@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% block title %} Thread Test {% endblock %}
+
+{% block body %}
+    <h2>{{self.title()}}</h2>
+    <div class="twitbox">
+        <a href="{{url_for('public_timeline')}}">go to homepage</a> |
+        <a href="{{url_for('threading_done')}}" target="_blank">thread test(short)</a> |
+        <a href="{{url_for('threading_done')}}" target="_blank">thread test(long)</a>
+    </div>
+    >>> {{message}}
+{% endblock %}
