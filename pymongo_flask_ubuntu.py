@@ -10,8 +10,8 @@ client = MongoClient('mongodb://localhost:27017')
 
 
     
-db = client.test
-collection = db.inventory
+db = client.petDB
+collection = db.Crawling_area
 
 client.close()
 
